@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+}
+.logo {
+    height: 45px;
+}
+.nav-btn {
+    background: #6B4BFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* HERO */
+.hero {
+    padding: 120px 20px;
+    background: linear-gradient(160deg, #6B4BFF 0%, #111 60%);
+}
+.hero h1 {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.hero .sub {
+    font-size: 22px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+}
+.btn-primary {
+    background: #6B4BFF;
+    padding: 14px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.btn-secondary {
+    border: 2px solid #6B4BFF;
+    padding: 14px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* TABLE */
+.compare {
+    padding: 80px 20px;
+}
+.compare h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 85%;
+    max-width: 700px;
+    color: #eee;
+}
+th, td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #333;
+}
+.highlight {
+    background: #6B4BFF40;
+}
+
+/* CTA FINAL */
+.cta-final {
+    padding: 80px 20px;
+}
+.cta-final h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    padding: 40px 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FacuGo! Stream</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<style>
+.fade-in {opacity:0; animation: fadeInUp 1s ease forwards;}
+@keyframes fadeInUp {from {opacity:0; transform: translateY(20px);} to {opacity:1; transform: translateY(0);} }
+</style>
+<style>
+.faq {padding: 60px 20px; max-width: 800px; margin: auto;}
+.faq-question {width: 100%; text-align: left; padding: 15px; background: #111; border: none; color: #fff; font-size: 1.1rem; cursor: pointer; margin-top: 10px; transition: .3s; border-radius: 6px;}
+.faq-question:hover {background: #222;}
+.faq-answer {display: none; padding: 10px 15px; color: #ccc; animation: fadeInUp .4s ease forwards;}
+.faq-item.active .faq-answer {display: block;}
+</style>
+
+
+<body>
+
+<header>
+    <nav class="nav">
+        <img src="logo.png" alt="FacuGo! Stream Logo" class="logo">
+        <a class="nav-btn" href="https://octopus-app-al996.ondigitalocean.app/">Entrar</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>FacuGo! Stream</h1>
+        <p class="sub">La plataforma donde vos te quedás con el <strong>100%</strong>.</p>
+        <div class="buttons">
+            <a href="https://octopus-app-al996.ondigitalocean.app/" class="btn-primary">Ver Streams en Vivo</a>
+            <a href="https://octopus-app-al996.ondigitalocean.app/" class="btn-secondary">Empezar a Streamear</a>
+        </div>
+    </div>
+</section>
+
+<section class="compare">
+    <h2>Transparente. Justo. Real.</h2>
+    <table>
+        <tr>
+            <th>Plataforma</th>
+            <th>% para el Creador</th>
+            <th>% para la Plataforma</th>
+        </tr>
+        <tr><td>Twitch</td><td>50%</td><td>50%</td></tr>
+        <tr><td>YouTube</td><td>45–55%</td><td>45–55%</td></tr>
+        <tr><td>Kick</td><td>98%</td><td>2%</td></tr>
+        <tr class="highlight"><td><strong>FacuGo! Stream</strong></td><td><strong>100%</strong></td><td><strong>0%</strong></td></tr>
+    </table>
+</section>
+
+<section class="comunidad fade-in">
+    <h2>FacuGo! Stream = Comunidad</h2>
+    <p>Somos la plataforma de Latam, calle, música, IRL, freestyle, gaming, vida real.<br>Acá la gente no ve contenido, ve personas.</p>
+    <p>Sin contratos raros.<br>Sin comisiones escondidas.<br><strong>100% de tus donaciones y membresías son tuyas.</strong></p>
+    <p><em>"Acá no te sacamos nada. Todo lo que generás es tuyo."</em></p>
+</section>
+<section class="faq fade-in">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq-item">
+    <button class="faq-question">¿Qué es FacuGo! Stream?</button>
+    <div class="faq-answer"><p>Es la plataforma de streaming donde los creadores se quedan con el 100% de sus ganancias. Sin contratos raros ni comisiones escondidas.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Cómo empiezo a streamear?</button>
+    <div class="faq-answer"><p>Solo creá tu cuenta y tocá "Empezar a Streamear". No necesitás permiso de nadie.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Cuánto me paga la plataforma?</button>
+    <div class="faq-answer"><p>Todo lo que generás es tuyo. Cero comisiones.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Qué contenido puedo hacer?</button>
+    <div class="faq-answer"><p>IRL, freestyle, música, gaming, stream de tu vida, todo lo que sea real y de vos.</p></div>
+  </div>
+</section>
+
+<section class="cta-final fade-in">
+    <h2>Transmití. Crecé. Cobrá todo.</h2>
+    <a href="https://octopus-app-al996.ondigitalocean.app/" class="btn-primary">Comenzar Ahora</a>
+</section>
+
+<footer>
+   <footer>
+    <p>© 2025 FacuGo! Stream is a project by SOFTMAGNO LLC Louisville, KY, USA. All Rights Reserved.</p>
+    <p><a href="#">Instagram</a> | <a href="#">TikTok</a> | <a href="#">Discord</a></p>
+    <p><a href="terminos.html">Términos & Condiciones</a> — <a href="privacidad.html">Política de Privacidad</a></p>
+</footer>
+
+
+<script>
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.parentElement.classList.toggle('active');
+  });
+});
+</script>
+</body>
+</html>
